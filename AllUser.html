@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>All Users</title>
 
   <link rel="stylesheet" href="css/main.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -23,7 +23,7 @@
         <div class="sidebar-heading text-center mb-5">
           <img src="assets/img/avatar-user.jpg" class="my-4" alt="avatar-user" style="width: 150px; height: 150px;">
           <h4 class="mb-3">Mahesa Adi Kusuma</h4>
-          <span c>Warga <span class="status px-2 py-2">Admin</span></span>
+          <span>Warga <span class="status px-2 py-2">Admin</span></span>
         </div>
 
         <div class="list-group list-group-flush">
@@ -37,7 +37,7 @@
             <span>Category</span>
           </a>
 
-          <div class="list-group-item list-group-item-action btn-group dropend active">
+          <div class="list-group-item list-group-item-action btn-group dropend">
             <a class="dropdown-toggle text-decoration-none text-white" type="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               <img src="assets/img/icon-transaction.svg" class="me-4" alt="">
@@ -65,7 +65,7 @@
             </ul>
           </div>
 
-          <a href="AllUser.html" class="list-group-item list-group-item-action">
+          <a href="AllUser.html" class="list-group-item list-group-item-action active">
             <img src="assets/img/icon-users.svg" alt="">
             <span>User</span>
           </a>
@@ -124,15 +124,13 @@
           <div class="container-fluid">
             <div class="dashboard-heading">
               <h2 class="title">Selamat Datang Mahesa</h2>
-              <p class="subtitle">Dashboard Admin</p>
+              <p class="subtitle">All Users
+              </p>
             </div>
 
             <div class="dashboard-content ">
               <div class="row">
                 <div class="col-md-12">
-                  <div class="subtitle mb-3">
-                    All Transaksi
-                  </div>
                   <div class="card">
                     <div class="card-body">
 
@@ -142,24 +140,18 @@
                             <tr>
                               <th>No</th>
                               <th>Nama</th>
-                              <th>Jumlah</th>
-                              <th>Type</th>
-                              <th>Status</th>
+                              <th>email</th>
+                              <th>Roles</th>
                               <th>Action</th>
-
-
                             </tr>
                           </thead>
                           <tbody>
+
                             <tr>
                               <td>1.</td>
                               <td>Livia Bator</td>
-                              <td>Rp. 50.000</td>
-                              <td>Biaya 17 Agustus</td>
-                              <td>
-                                <span class="badge text-bg-warning text-white px-3 py-2">PENDING</span>
-                              </td>
-
+                              <td>LiviaBator@gmail.com</td>
+                              <td>Warga</td>
                               <td>
 
                                 <div class="btn-group dropend">
@@ -170,24 +162,20 @@
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     <span class="visually-hidden">Toggle Dropend</span>
                                   </button>
+
                                   <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="detailsTransaksi.html">Details</a></li>
+                                    <li><a class="dropdown-item" href="detailUser.html">Details</a></li>
                                     <li><a class="dropdown-item" href="#">Hapus</a></li>
                                   </ul>
                                 </div>
                               <td>
-
                             </tr>
 
                             <tr>
                               <td>2.</td>
-                              <td>Livia Bator</td>
-                              <td>Rp. 50.000</td>
-                              <td>Biaya 17 Agustus</td>
-                              <td>
-                                <span class="badge text-bg-success text-white px-3 py-2">SUCCESS</span>
-                              </td>
-
+                              <td>Hanna Westervelt</td>
+                              <td>HannaWestervelt@gmail.com</td>
+                              <td>Admin</td>
                               <td>
 
                                 <div class="btn-group dropend">
@@ -198,41 +186,14 @@
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     <span class="visually-hidden">Toggle Dropend</span>
                                   </button>
+
                                   <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="detailsTransaksi.html">Details</a></li>
+                                    <li><a class="dropdown-item" href="detailUser.html">Details</a></li>
                                     <li><a class="dropdown-item" href="#">Hapus</a></li>
                                   </ul>
                                 </div>
                               <td>
                             </tr>
-
-                            <tr>
-                              <td>1.</td>
-                              <td>Livia Bator</td>
-                              <td>Rp. 50.000</td>
-                              <td>Biaya 17 Agustus</td>
-                              <td>
-                                <span class="badge text-bg-danger text-white px-3 py-2">FAILLED</span>
-                              </td>
-
-                              <td>
-
-                                <div class="btn-group dropend">
-                                  <button type="button" class="btn btn-success p-2">
-                                    Aksi
-                                  </button>
-                                  <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span class="visually-hidden">Toggle Dropend</span>
-                                  </button>
-                                  <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="detailsTransaksi.html">Details</a></li>
-                                    <li><a class="dropdown-item" href="#">Hapus</a></li>
-                                  </ul>
-                                </div>
-                              <td>
-                            </tr>
-
 
 
 

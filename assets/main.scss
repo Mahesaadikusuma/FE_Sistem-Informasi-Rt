@@ -134,9 +134,19 @@
     }
 
     table {
-      color: #fff; 
+      color: #fff;
       &:hover {
         color: #fff;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      label {
+        font-size: 18px;
+        margin-left: 80px;
+      }
+      .coment {
+        margin-left: 0;
       }
     }
   }
