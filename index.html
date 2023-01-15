@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Bootstrap demo</title>
+
+     <link rel="stylesheet" href="css/main.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+     <div class="page-dashboard">
+          <div class="d-flex" id="wrapper" data-aos="fade-right">
+
+               <!-- sidebar -->
+               <div class="" id="sidebar-wrapper">
+                    <div class="sidebar-heading text-center mb-5">
+                         <img src="assets/img/avatar-user.jpg" class="my-4" alt="avatar-user"
+                              style="width: 150px; height: 150px;">
+                         <h4 class="mb-3">Mahesa Adi Kusuma</h4>
+                         <span c>Warga <span class="status px-2 py-2">Admin</span></span>
+                    </div>
+
+                    <div class="list-group list-group-flush">
+                         <a href="index.html" class="list-group-item list-group-item-action active">
+                              <img src="assets/img/icon-dashboard.svg" alt="">
+                              <span>Dashboard</span>
+                         </a>
+
+                         <a href="category.html" class="list-group-item list-group-item-action">
+                              <img src="assets/img/icon-category.svg" alt="">
+                              <span>Category</span>
+                         </a>
+
+                         <div class="list-group-item list-group-item-action btn-group dropend active">
+                              <a class="dropdown-toggle text-decoration-none text-white" type="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                   <img src="assets/img/icon-transaction.svg" class="me-4" alt="">
+                                   Transaksi
+                              </a>
+                              <ul class="dropdown-menu">
+                                   <li><a class="dropdown-item" href="AllTransaction.html">All Transaksi</a></li>
+                                   <li><a class="dropdown-item" href="transaksiMasuk.html">Transaksi Masuk</a></li>
+                                   <li><a class="dropdown-item" href="transaksiKeluar.html">Transaksi Keluar</a></li>
+                              </ul>
+                         </div>
+
+                         <div class="list-group-item list-group-item-action btn-group dropend active">
+                              <a class="dropdown-toggle text-decoration-none text-white" type="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                   <img src="assets/img/icon-transaction.svg" class="me-4" alt="">
+                                   Component
+                              </a>
+                              <ul class="dropdown-menu">
+                                   <li><a class="dropdown-item" href="laporan.html">All Transaksi</a></li>
+                                   <li><a class="dropdown-item" href="agenda.html">Transaksi Masuk</a></li>
+                                   <li><a class="dropdown-item" href="pengumuman.html">Transaksi Keluar</a></li>
+                              </ul>
+                         </div>
+
+                         <a href="#" class="list-group-item list-group-item-action">
+                              <img src="assets/img/icon-users.svg" alt="">
+                              <span>User</span>
+                         </a>
+
+                         <a href="#" class="list-group-item list-group-item-action">
+                              <img src="assets/img/icon-setting.svg" alt="">
+                              <span>Settings</span>
+                         </a>
+                    </div>
+               </div>
+               <!-- END sidebar -->
+
+               <!-- page content -->
+               <div id="page-content-wrapper">
+                    <nav class="navbar navbar-store navbar-expand-lg navbar-light bg-md-transparent"
+                         data-aos="fade-down">
+                         <button class="btn btn-secondary d-md-none me-auto ms-3 mt-4" id="menu-toggle">&laquo;
+                              Menu</button>
+
+                         <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                              aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                         </button> -->
+
+                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav ms-auto d-none d-lg-block">
+                                   <li class="nav-item dropdown ">
+
+                                        <a class="nav-link me-5 text-white" type="button" data-bs-toggle="dropdown"
+                                             aria-expanded="false">
+                                             <img src="assets/img/avatar-user-1.svg" alt=""
+                                                  class="rounded-circle me-2 profile-picture" />
+                                             Hi, Esa
+                                        </a>
+
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                             <a class="dropdown-item" href="/index.html">Back to Home</a>
+                                             <a class="dropdown-item" href="/dashboard-account.html">Settings</a>
+                                             <div class="dropdown-divider"></div>
+                                             <a class="dropdown-item" href="/">Logout</a>
+                                        </div>
+                                   </li>
+                              </ul>
+                         </div>
+                    </nav>
+
+                    <div class="section section-content">
+                         <ul class="navbar-nav d-md-none "
+                              style="margin-left: 400px; margin-top: -60px; margin-bottom: 20px;">
+                              <li class="nav-item dropdown">
+
+                                   <a class="nav-link me-5" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <img src="assets/img/avatar-user-1.svg" alt=""
+                                             class="rounded-circle me-2 profile-picture" />
+                                   </a>
+
+                                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="/index.html">Back to Home</a>
+                                        <a class="dropdown-item" href="/dashboard-account.html">Settings</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="/">Logout</a>
+                                   </div>
+                              </li>
+                         </ul>
+
+                         <div class="container-fluid">
+                              <div class="dashboard-heading">
+                                   <h2 class="title">Selamat Datang Mahesa</h2>
+                                   <p class="subtitle">Dashboard Admin</p>
+                              </div>
+
+                              <div class="dashboard-content">
+                                   <div class="row">
+                                        <div class="col-md-5 pe-4 mb-3 mb-md-0">
+                                             <div class="card mb-2" style="height: 200px;">
+                                                  <div class="card-body">
+                                                       <div class="dashboard-card-title">Users</div>
+                                                       <div class="dashboard-card-subtitle">5,000</div>
+                                                  </div>
+                                             </div>
+                                        </div>
+
+                                        <div class="col-md-5 pe-4">
+                                             <div class="card mb-2" style="height: 200px;">
+                                                  <div class="card-body">
+                                                       <div class="dashboard-card-title">All Transactions</div>
+                                                       <div class="dashboard-card-subtitle">Rp 1.000.000</div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <div class="row mt-3">
+                                        <div class="col-md-5 pe-4 mb-3 mb-md-0">
+                                             <h2 style="font-size: 18px; margin-left: 10px; color: #9191A9;">User Last
+                                                  Join
+                                             </h2>
+
+                                             <div class="document-card p-1">
+                                                  <div class="document-item mt-3">
+                                                       <div class="d-flex justify-content-start align-items-center">
+                                                            <div class="document-icon box mt-3">
+                                                                 <img src="assets/img/user-join.svg" alt="">
+                                                            </div>
+
+                                                            <div
+                                                                 class="d-flex flex-column justify-content-between align-items-start">
+                                                                 <h2 class="document-title ms-5 mt-3">Zain Kenter</h2>
+
+                                                                 <span class="document-desc ms-5 "
+                                                                      style="font-size:16px; color: #9191A9;">2022-12-14</span>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+
+                                                  <div class="document-item mt-2">
+                                                       <div class="d-flex justify-content-start align-items-center">
+                                                            <div class="document-icon box mt-3">
+                                                                 <img src="assets/img/user-join-2.svg" alt="">
+                                                            </div>
+
+                                                            <div
+                                                                 class="d-flex flex-column justify-content-between align-items-start">
+                                                                 <h2 class="document-title ms-5 mt-3">Hanna Westervelt
+                                                                 </h2>
+
+                                                                 <span class="document-desc ms-5 "
+                                                                      style="font-size:16px; color: #9191A9;">2022-12-14</span>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+
+                                                  <div class="document-item mt-2">
+                                                       <div class="d-flex justify-content-start align-items-center">
+                                                            <div class="document-icon box mt-3">
+                                                                 <img src="assets/img/user-join-3.svg" alt="">
+                                                            </div>
+
+                                                            <div
+                                                                 class="d-flex flex-column justify-content-between align-items-start">
+                                                                 <h2 class="document-title ms-5 mt-3">Justin Culhane
+                                                                 </h2>
+
+                                                                 <span class="document-desc ms-5 "
+                                                                      style="font-size:16px; color: #9191A9;">2022-12-14</span>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+
+                                                  <div class="document-item mt-2">
+                                                       <div
+                                                            class="d-flex justify-content-start align-items-center mb-5">
+                                                            <div class="document-icon box mt-3">
+                                                                 <img src="assets/img/user-join-4.svg" alt="">
+                                                            </div>
+
+                                                            <div
+                                                                 class="d-flex flex-column justify-content-between align-items-start">
+                                                                 <h2 class="document-title ms-5 mt-3">Jocelyn Carder
+                                                                 </h2>
+
+                                                                 <span class="document-desc ms-5 "
+                                                                      style="font-size:16px; color: #9191A9;">2022-12-14</span>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+
+                                        <div class="col-md-5 pe-4 mb-3 mb-md-0">
+                                             <h2 style="font-size: 18px; margin-left: 10px; color: #9191A9;">User Last
+                                                  Join
+                                             </h2>
+
+                                             <div class="document-card p-1">
+                                                  <div class="document-item mb-3">
+                                                       <div class="d-flex justify-content-start align-items-center">
+                                                            <div class="document-icon box mt-3 rounded-circle"
+                                                                 style="background-color: #291285; padding: 15px;">
+                                                                 <img src="assets/img/download.svg" alt="">
+                                                            </div>
+
+                                                            <div
+                                                                 class="d-flex flex-column justify-content-between align-items-start">
+                                                                 <h2 class="document-title ms-5 mt-3">Laporan Keuangan
+                                                                      RT</h2>
+
+                                                                 <span class="document-desc ms-5 "
+                                                                      style="font-size:16px; color: #9191A9;">180 MB •
+                                                                      PDF</span>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+
+                                                  <div class="document-item mb-3">
+                                                       <div class="d-flex justify-content-start align-items-center">
+                                                            <div class="document-icon box mt-3 rounded-circle"
+                                                                 style="background-color: #5E0A5A; padding: 15px;">
+                                                                 <img src="assets/img/download.svg" alt="">
+                                                            </div>
+
+                                                            <div
+                                                                 class="d-flex flex-column justify-content-between align-items-start">
+                                                                 <h2 class="document-title ms-5 mt-3">Laporan Keuangan
+                                                                      RT</h2>
+
+                                                                 <span class="document-desc ms-5 "
+                                                                      style="font-size:16px; color: #9191A9;">180 MB •
+                                                                      PDF</span>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+
+                                                  <div class="document-item mb-3 ">
+                                                       <div class="d-flex justify-content-start align-items-center">
+                                                            <div class="document-icon box mt-3 rounded-circle"
+                                                                 style="background-color: #291285; padding: 15px;">
+                                                                 <img src="assets/img/download.svg" alt="">
+                                                            </div>
+
+                                                            <div
+                                                                 class="d-flex flex-column justify-content-between align-items-start">
+                                                                 <h2 class="document-title ms-5 mt-3">Laporan Keuangan
+                                                                      RT</h2>
+
+                                                                 <span class="document-desc ms-5 "
+                                                                      style="font-size:16px; color: #9191A9;">180 MB •
+                                                                      PDF</span>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+
+
+                                             </div>
+                                        </div>
+
+
+                                   </div>
+
+                              </div>
+                         </div>
+                    </div>
+                    <!-- contents -->
+               </div>
+
+          </div>
+     </div>
+
+     <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+          integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+          crossorigin="anonymous"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+          AOS.init();
+     </script>
+
+     <script>
+          $("#menu-toggle").click(function (e) {
+               e.preventDefault();
+               $("#wrapper").toggleClass("toggled");
+          });
+     </script>
+</body>
+
+</html>

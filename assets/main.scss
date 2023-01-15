@@ -1,0 +1,143 @@
+@import "../assets/scss/bootstrap.scss";
+
+.page-dashboard {
+  overflow-x: hidden;
+  color: #fff;
+  #page-content-wrapper {
+    background: #06061e;
+    min-width: 100vw;
+    //     min-height: 100vh;
+  }
+
+  #sidebar-wrapper {
+    //     margin-top: 40px;
+    //     overflow-x: hidden;
+    min-height: 100vh;
+    background-color: #0d1138;
+    margin-left: -18rem;
+    transition: margin 0.25s ease-out;
+
+    .sidebar-heading {
+      padding: 0.875rem 1.25rem;
+      font-size: 1.2rem;
+
+      .status {
+        background-color: #1900b5;
+        // padding: 5px;
+
+        border-radius: 4px;
+      }
+    }
+
+    .list-group {
+      width: 18rem;
+    }
+  }
+
+  #wrapper {
+    &.toggled {
+      #sidebar-wrapper {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .navbar-store {
+    margin-top: 0;
+    // background-color: #f5f5fb;
+    //     box-shadow: 0px 4px 5px #cacad1;
+    @include media-breakpoint-up(md) {
+      background-color: transparent; // INI TIDAK BISA DIGUNAKAN
+      box-shadow: none;
+    }
+  }
+
+  .list-group-item {
+    border: 0;
+    font-size: 16px;
+    background-color: #0d1138;
+    color: #fff;
+    margin-bottom: 20px;
+
+    img {
+      margin-left: 20px;
+    }
+
+    span {
+      margin-left: 30px;
+    }
+
+    &.active {
+      background-color: #050292;
+      border-radius: 50px;
+    }
+
+    &:hover {
+      background-color: #050292;
+      color: #fff;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    #sidebar-wrapper {
+      margin-left: 0;
+      margin-top: 0px;
+    }
+
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+
+    #wrapper {
+      &.toggled {
+        #sidebar-wrapper {
+          margin-left: -15rem;
+        }
+      }
+    }
+  }
+
+  .section-content {
+    padding: 4px;
+
+    .card {
+      background-color: #0c0b31;
+      border-radius: 10px;
+      .card-body {
+        .dashboard-card-title {
+          font-size: 20px;
+          font-weight: 400px;
+        }
+
+        .dashboard-card-subtitle {
+          margin-top: 20px;
+          margin-left: 30px;
+          font-size: 50px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .document-card {
+      background-color: #0c0b31;
+      max-height: 400px;
+      //  padding: 5px;
+
+      border-radius: 10px;
+      .document-item {
+        margin-left: 40px;
+        .document-title {
+          font-size: 20px;
+        }
+      }
+    }
+
+    table {
+      color: #fff; 
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
