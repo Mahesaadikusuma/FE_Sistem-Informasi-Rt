@@ -12012,6 +12012,33 @@ textarea.form-control-lg {
   font-weight: 400;
 }
 
+.section-dokumentasi {
+  margin-top: 150px;
+}
+@media (max-width: 767.98px) {
+  .section-dokumentasi {
+    padding: 1.5rem;
+  }
+}
+.section-dokumentasi .card .card-body .card-title {
+  font-size: 24px;
+  font-weight: 500;
+}
+.section-dokumentasi .card .card-body .card-text {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.section-review {
+  margin-top: 150px;
+}
+.section-review .card .avatar-user .avatar-status .username {
+  font-size: 18px;
+}
+.section-review .card .avatar-user .avatar-status .status {
+  font-size: 14px;
+}
+
 .page-dashboard {
   overflow-x: hidden;
   color: #fff;
